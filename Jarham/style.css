@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #ffd6ec, #ffe6f9);
+  color: #333;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #e75480;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.yes {
+  background: #ff80b0;
+  color: white;
+}
+
+.no {
+  background: #fff;
+  border: 2px solid #ff80b0;
+  color: #ff80b0;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #ff80b0;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  background: #ff80b0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.falling-flowers::before,
+.falling-flowers::after {
+  content: "🌸🌷🌺🌼🌸🌷🌺🌼";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  animation: fall 8s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
